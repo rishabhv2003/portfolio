@@ -5,6 +5,9 @@ import { FaLinkedin, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { HiDocumentDownload } from "react-icons/hi";
 function About() {
+	const openResume = () => {
+		window.open("https://drive.google.com/file/d/1z8svA74U4asRp_b-mB9rRW4Hi56zJ7Ix/view?usp=drive_link", "_blank");
+	};
 	return (
 		<div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-12">
 			<div className="w-full md:w-6/12">
@@ -27,7 +30,7 @@ function About() {
 					</a>
 					</div> */}
 					<div className='flex gap-4'>
-						<button class="inline-block px-6 py-1 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md ">
+						<button onClick={openResume} class="inline-block px-6 py-1 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md ">
 							Resume
 						</button>
 						<button class="inline-block px-6 py-1 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md ">
