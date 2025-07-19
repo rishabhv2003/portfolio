@@ -1,49 +1,70 @@
 import React from 'react';
 import myImg from '../images/hero.jpg';
 import SectionTitle from './SectionTitle';
-import { FaLinkedin, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { HiDocumentDownload } from "react-icons/hi";
+
 function About() {
 	const openResume = () => {
-		window.open("https://drive.google.com/file/d/1z8svA74U4asRp_b-mB9rRW4Hi56zJ7Ix/view?usp=drive_link", "_blank");
+		window.open("https://drive.google.com/file/d/1aM8kFQRS9hTscyAoWHtYaVvl2pSGYFQn/view?usp=sharing", "_blank");
 	};
+
+	const openContact = () => {
+		window.location.href = "mailto:2000rishabhverma@gmail.com";
+	};
+
 	return (
 		<div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-12">
 			<div className="w-full md:w-6/12">
 				<SectionTitle>About Me</SectionTitle>
-				<div className='about-para mb-3'>
-					<p className="text-md text-gray-600 dark:text-gray-300">
-						I'm a college student deeply passionate about web and software development. With an insatiable curiosity for creating digital solutions, I thrive on coding challenges and embrace new technologies. As a lifelong learner, I'm eager to contribute my skills to the tech world. 🌐💻🚀
+				<div className="mb-4">
+					<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+						I'm a Software Developer with experience in backend systems, algo trading strategies, and real-time data applications. I enjoy building efficient tools and scalable architectures, whether it's for financial systems, internal automation, or backend APIs. Passionate about continuous learning, I’m always exploring new technologies and ways to improve developer productivity.
 					</p>
 				</div>
-				<div className='about-icons flex flex-row justify-between align-middle'>
-					{/* <div>
-						<a title="LinkedIn" href="https://www.linkedin.com/in/rishabh-verma-2148741ba/" className='inline-block text-gray-700 mr-2 hover:text-indigo-500 dark:text-white'>
-							<FaLinkedin className='w-9 h-9 transform hover:scale-125 transition-transform duration-300 ease-in-out' />
-						</a>
-						<a title="Twitter" href="https://twitter.com/vrishabh__" className='inline-block text-gray-700 mr-2 hover:text-indigo-500 dark:text-white'>
-							<FaTwitterSquare className='w-9 h-9 transform hover:scale-125 transition-transform duration-300 ease-in-out' />
-						</a>
-						<a href="https://www.linkedin.com/in/rishabh-verma-2148741ba/" className='inline-block text-gray-700 mr-2 hover:text-indigo-500 dark:text-white'>
-						<FaFacebookSquare className='w-8 h-8 transform hover:scale-125 transition-transform duration-300 ease-in-out' />
-					</a>
-					</div> */}
-					<div className='flex gap-4'>
-						<button onClick={openResume} class="inline-block px-6 py-1 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md ">
-							Resume
-						</button>
-						<button class="inline-block px-6 py-1 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-md ">
-							Contact
-						</button>
-					</div>
+
+				<div className="flex gap-4 mt-4">
+					<button
+						onClick={openResume}
+						className="inline-flex items-center gap-2 px-6 py-2 rounded-md bg-indigo-600 hover:bg-indigo-700 text-white text-lg font-medium transition"
+					>
+						Resume
+					</button>
+					<button
+						onClick={openContact}
+						className="inline-flex items-center gap-2 px-6 py-2 rounded-md bg-gray-700 hover:bg-gray-800 text-white text-lg font-medium transition"
+					>
+						Contact
+					</button>
 				</div>
+
+				{/* Optional Social Links */}
+				{/* <div className="flex gap-4 mt-6">
+					<a
+						title="LinkedIn"
+						href="https://www.linkedin.com/in/rishabh-verma-2148741ba/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-gray-700 dark:text-white hover:text-indigo-500"
+					>
+						<FaLinkedin className="w-7 h-7 transition-transform transform hover:scale-125" />
+					</a>
+					<a
+						title="Twitter"
+						href="https://twitter.com/vrishabh__"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-gray-700 dark:text-white hover:text-indigo-500"
+					>
+						<FaTwitterSquare className="w-7 h-7 transition-transform transform hover:scale-125" />
+					</a>
+				</div> */}
 			</div>
 
 			<img
 				src={myImg}
-				alt="Rishabh"
-				className="w-full md:w-6/12 rounded-lg object-cover"
+				alt="Rishabh Verma"
+				className="w-full md:w-6/12 rounded-lg object-cover shadow-lg"
 			/>
 		</div>
 	);

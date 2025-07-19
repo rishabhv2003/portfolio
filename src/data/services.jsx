@@ -1,25 +1,24 @@
-import React from 'react';
-import { MdWeb } from 'react-icons/md';
-import { FaHandHoldingHeart } from 'react-icons/fa';
-import { VscCode } from 'react-icons/vsc';
+import { MdSettingsSystemDaydream } from 'react-icons/md';
+import { FaTools } from 'react-icons/fa';
+import { VscTerminal } from 'react-icons/vsc';
 
 export default [
 	{
-		title: 'Web Design',
-		icon: <MdWeb className="w-full h-full" />,
+		title: 'Backend & System Design',
+		icon: <MdSettingsSystemDaydream className="w-full h-full" />,
 		description:
-			'I have a passion for crafting visually appealing and user-friendly interfaces. My focus is on creating seamless digital experiences that captivate and engage users.',
+			'I build scalable and efficient backend systems, with a strong focus on performance, reliability, and clean architecture. My experience spans across API development, database design, and infrastructure tooling.',
 	},
 	{
-		title: 'Ui Design',
-		icon: <FaHandHoldingHeart className="w-full h-full" />,
+		title: 'Automation & Tooling',
+		icon: <FaTools className="w-full h-full" />,
 		description:
-			'My UI design philosophy is centered around empathy and user connection. I strive to create designs that not only look beautiful but also resonate with users on a personal and emotional level.',
+			'I specialize in automating workflows and building internal tools that reduce manual overhead and boost productivity. From cloud automation to reporting pipelines, I enjoy solving real-world problems with code.',
 	},
 	{
-		title: 'Web Development',
-		icon: <VscCode className="w-full h-full" />,
+		title: 'Data-Driven Development',
+		icon: <VscTerminal className="w-full h-full" />,
 		description:
-			'I specialize in building robust and dynamic web applications. Leveraging cutting-edge technologies, I bring ideas to life, ensuring a seamless and efficient development process.',
+			'I work with data at the core — building scripts and systems that process, analyze, and act on real-time or historical data. Whether it\'s for monitoring, reporting, or decision-making, I ensure data is actionable and accessible.',
 	},
 ];
