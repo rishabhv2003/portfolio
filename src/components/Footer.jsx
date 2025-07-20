@@ -1,4 +1,3 @@
-import React from "react";
 import { FaEnvelope, FaArrowUp } from "react-icons/fa";
 
 function Footer() {

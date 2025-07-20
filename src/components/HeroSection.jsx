@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -20,11 +19,9 @@ function HeroSection() {
             sequence={[
               "Software Developer",
               2000,
-              "Backend Engineer",
+              "Backend Developer",
               2000,
               "Automation Enthusiast",
-              2000,
-              "System Designer",
               2000,
             ]}
             wrapper="span"

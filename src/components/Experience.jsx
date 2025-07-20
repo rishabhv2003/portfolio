@@ -1,35 +1,34 @@
-import React from 'react';
-import SectionTitle from './SectionTitle';
-import { FaBriefcase } from 'react-icons/fa';
+import SectionTitle from "./SectionTitle";
+import { FaBriefcase } from "react-icons/fa";
 
 const experiences = [
   {
-    role: 'Software Developer',
-    company: 'CSV Trade Trail Pvt. Ltd.',
-    location: 'Soami Nagar, Delhi',
-    duration: 'May 2024 – Present',
+    role: "Software Developer",
+    company: "CSV Trade Trail Pvt. Ltd.",
+    location: "Soami Nagar, Delhi",
+    duration: "May 2024 - Present",
     bullets: [
-      'Developed parallelized financial backtesting tools using Dask and Multiprocessing, improving speed by 60%.',
-      'Deployed 2 F&O and 2 Equity trading strategies with VWAP, IV pricing, delay and slicing logic; improved execution efficiency by 40%.',
-      'Engineered a scalable backend using Python and FastAPI to handle 100+ trades/min, reducing manual handling by 30%.',
-      'Automated AWS EC2 workflows using Lambda with monitoring, alerts, and compliance; ensured 99.9% uptime.',
-      'Built a real-time market data broadcaster using Kite WebSockets for trading application.',
-      'Developed a fault-tolerant data distribution server using Zerodha, XTS, and Google Sheets APIs.',
-      'Built MTM, index-wise risk, and drawdown monitoring tools; reduced manual effort by 60%.',
+      "Developed parallelized financial backtesting tools using Dask and Multiprocessing, improving speed by 60%.",
+      "Deployed 2 F&O and 2 Equity trading strategies with VWAP, IV pricing, delay and slicing logic; improved execution efficiency by 40%.",
+      "Engineered a scalable backend using Python and FastAPI to handle 100+ trades/min, reducing manual handling by 30%.",
+      "Automated AWS EC2 workflows using Lambda with monitoring, alerts, and compliance; ensured 99.9% uptime.",
+      "Built a real-time market data broadcaster using Kite WebSockets for trading application.",
+      "Developed a fault-tolerant data distribution server using Zerodha, XTS, and Google Sheets APIs.",
+      "Built MTM, index-wise risk, and drawdown monitoring tools; reduced manual effort by 60%.",
     ],
   },
   {
-    role: 'Software Engineer Trainee',
-    company: 'Cadence Design Systems',
-    location: 'Noida, Uttar Pradesh',
-    duration: 'Apr 2023 – Aug 2023',
+    role: "Software Engineer Trainee",
+    company: "Cadence Design Systems",
+    location: "Noida, Uttar Pradesh",
+    duration: "Apr 2023 - Aug 2023",
     bullets: [
-      'Built a remote debugging utility for Tempus DSTA Tool using Boost libraries and Signals to trace distributed processes across systems; reduced debug time by 70%.',
-      'Resolved 1000+ code warnings and potential bugs by applying advanced compiler flags and code analysis techniques.',
-      'Improved core product functionality and user workflows through multiple feature enhancements.',
-      'Designed and maintained regression test suites; authored 2 new ones and fixed 50+ failing cases.',
-      'Automated internal tools and build validation workflows using Python to support development team.',
-      'Utilized C, C++, Boost, Python, Tcl, Linux, Perforce (VCS).',
+      "Built a remote debugging utility for Tempus DSTA Tool using Boost libraries and Signals to trace distributed processes across systems; reduced debug time by 70%.",
+      "Resolved 1000+ code warnings and potential bugs by applying advanced compiler flags and code analysis techniques.",
+      "Improved core product functionality and user workflows through multiple feature enhancements.",
+      "Designed and maintained regression test suites; authored 2 new ones and fixed 50+ failing cases.",
+      "Automated internal tools and build validation workflows using Python to support development team.",
+      "Utilized C, C++, Boost, Python, Tcl, Linux, Perforce (VCS).",
     ],
   },
 ];
@@ -48,7 +47,9 @@ function Experience() {
 
             {/* Experience content */}
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 transition-transform duration-300 hover:scale-[1.02]">
-              <h3 className="text-lg font-bold text-indigo-600 dark:text-indigo-400">{exp.role}</h3>
+              <h3 className="text-lg font-bold text-indigo-600 dark:text-indigo-400">
+                {exp.role}
+              </h3>
               <p className="text-sm text-gray-700 dark:text-gray-300 font-medium">
                 {exp.company} – {exp.location}
               </p>
