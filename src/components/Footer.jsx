@@ -1,22 +1,32 @@
-import React from 'react';
+import React from "react";
+import { FaEnvelope, FaArrowUp } from "react-icons/fa";
 
 function Footer() {
-	return (
-		<div className="py-5 bg-slate-800 text-center text-gray-300 rounded-t-lg">
-			<a href="#hero" className="block text-xl md:text-2xl font-semibold">
-				Rishabh Verma
-			</a>
-			<a
-				href="mailto:2000rishabhverma@gmail.com"
-				className="text-sm md:text-md hover:text-indigo-500"
-			>
-				2000rishabhverma@gmail.com
-			</a>
-			<p className="text-xs mt-2 text-gray-500">
-				{new Date().getFullYear()}.
-			</p>
-		</div>
-	);
+  return (
+    <footer className="py-6 px-4 bg-slate-800 text-center text-gray-300 rounded-t-2xl shadow-inner border-t border-slate-700">
+      <a
+        href="#hero"
+        className="inline-flex items-center gap-2 text-2xl font-bold tracking-wide hover:text-indigo-400 transition duration-300"
+      >
+        <FaArrowUp className="text-sm animate-bounce" />
+        Rishabh Verma
+      </a>
+
+      <div className="mt-2">
+        <a
+          href="mailto:2000rishabhverma@gmail.com"
+          className="inline-flex items-center gap-2 text-sm md:text-md text-gray-400 hover:text-indigo-400 transition duration-300"
+        >
+          <FaEnvelope />
+          2000rishabhverma@gmail.com
+        </a>
+      </div>
+
+      <p className="text-xs mt-4 text-gray-500">
+        © {new Date().getFullYear()} Rishabh Verma. All rights reserved.
+      </p>
+    </footer>
+  );
 }
 
 export default Footer;
